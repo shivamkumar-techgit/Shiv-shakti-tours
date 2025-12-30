@@ -14,12 +14,14 @@ const mobileNav = document.getElementById("mobileNav");
 // Toggle menu
 menuToggle.addEventListener("click", () => {
   mobileNav.classList.toggle("active");
+  menuToggle.classList.toggle("active");
 });
 
 // Close menu when link is clicked (IMPORTANT)
 document.querySelectorAll(".mobile-nav a").forEach(link => {
   link.addEventListener("click", () => {
     mobileNav.classList.remove("active");
+    menuToggle.classList.remove("active");
   });
 });
 
