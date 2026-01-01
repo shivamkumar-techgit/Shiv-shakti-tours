@@ -51,7 +51,7 @@ if (lightbox && lightboxImg && lightboxClose) {
 }
 
 // Package card animations
-const packageCards = document.querySelectorAll(".package-card.animate");
+const packageCards = document.querySelectorAll(".package-card.animate, .service-card.animate");
 
 const observerOptions = {
   threshold: 0.1,
